@@ -12,26 +12,29 @@ body{
     background-size:400% 400%;
     animation:bgMove 12s ease infinite;
     color:white;
-    overflow:hidden;
+    overflow-x: hidden;
+overflow-y: auto;
 }
 
 .page{
     width:100%;
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
+    padding:20px;
 }
 
 .card{
     background: rgba(255,255,255,0.12);
     backdrop-filter: blur(18px);
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 25px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-    padding: 40px;
-    text-align: center;
-    max-width: 500px;
-    width: 80%;
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:25px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.4);
+    padding:25px;
+    text-align:center;
+    width:95%;
+    max-width:500px;
 }
 
 h1{
@@ -199,8 +202,9 @@ margin:10px;
     }
 }
 #memoryPhoto{
-    width:250px;
-    height:320px;
+    width:100%;
+    max-width:280px;
+    height:auto;
     object-fit:cover;
     border-radius:20px;
     display:block;
@@ -334,4 +338,26 @@ h1{
         opacity:1;
         transform:scale(1);
     }
+}
+@media (max-width:768px){
+
+h1{
+    font-size:28px !important;
+}
+
+p{
+    font-size:16px;
+}
+
+#memoryPhoto{
+    width:100%;
+    max-width:280px;
+    height:auto;
+}
+
+button{
+    width:100%;
+    font-size:16px;
+}
+
 }
