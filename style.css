@@ -366,3 +366,38 @@ button{
 }
 
 }
+/* Mobile Fix */
+@media (max-width:768px){
+
+  body{
+    overflow-y:auto;
+    overflow-x:hidden;
+  }
+
+  .card{
+    width:95% !important;
+    max-width:350px !important;
+    padding:18px !important;
+    margin:20px auto !important;
+  }
+
+  h1{
+    font-size:26px !important;
+  }
+
+  p{
+    font-size:16px !important;
+  }
+
+  #memoryPhoto{
+    width:100% !important;
+    max-width:260px !important;
+    height:auto !important;
+  }
+
+  button{
+    width:100% !important;
+    font-size:16px !important;
+    padding:12px !important;
+  }
+}
